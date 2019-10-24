@@ -1,0 +1,44 @@
+#start-pg {
+  background-color: red;
+  height: 100vh;
+
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 120px 0 50px 0;
+
+    &:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+      animation: ellipsis steps(4,end) 2s infinite;
+      content: "\2026"; /* ascii code for the ellipsis character */
+      width: 0px;
+    }
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 0 calc((100vw - 150px)*0.5);
+    opacity: 0.8;
+  }
+
+  #start-button {
+    display: flex;
+    margin: 50px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    outline-style: none;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+      transform: translateY(5px);
+    }
+  }
+}

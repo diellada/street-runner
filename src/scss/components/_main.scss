@@ -1,0 +1,30 @@
+#main {
+  background-color: seagreen;
+  height: 100vh;
+  display: none;
+  margin: 0; 
+
+  h1 {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+  }
+
+  #captions {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #next-crime {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}

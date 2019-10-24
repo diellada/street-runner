@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  font-family: "Courier New", courier, monospace; }
+
+@keyframes ellipsis {
+  to {
+    width: 0.9em; } }
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 0.9em; } }
+
+#start-pg {
+  background-color: red;
+  height: 100vh; }
+  #start-pg h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 120px 0 50px 0; }
+    #start-pg h2:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-animation: ellipsis steps(4, end) 2s infinite;
+      animation: ellipsis steps(4, end) 2s infinite;
+      content: "\2026";
+      /* ascii code for the ellipsis character */
+      width: 0px; }
+  #start-pg img {
+    width: 150px;
+    height: 150px;
+    margin: 0 calc((100vw - 150px)*0.5);
+    opacity: 0.8; }
+  #start-pg #start-button {
+    display: flex;
+    margin: 50px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    outline-style: none;
+    cursor: pointer; }
+    #start-pg #start-button:hover {
+      color: red;
+      transform: translateY(5px); }
+
+#main {
+  background-color: seagreen;
+  height: 100vh;
+  display: none;
+  margin: 0; }
+  #main h1 {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px; }
+  #main #captions {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center; }
+  #main #next-crime {
+    display: block;
+    padding: 10px;
+    margin: 0 auto; }
+
+#map {
+  margin: 0 auto;
+  border: 2px solid black;
+  height: 400px;
+  width: 500px; }
