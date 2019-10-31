@@ -111,7 +111,7 @@ getCrimes(crime1.lat, crime1.lng).then((data) => {
     const marker: google.maps.Marker = new google.maps.Marker({position: crime1, map: map});
     
     const icon = {
-      url: "../../../assets/run-man.gif",
+      url: "../../assets/run-man.gif",
       scaledSize: new google.maps.Size(60, 60), 
       origin: new google.maps.Point(0,0), 
       anchor: new google.maps.Point(0, 0) 
