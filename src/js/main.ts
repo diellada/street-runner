@@ -120,7 +120,7 @@ getCrimes(crime1.lat, crime1.lng).then((data) => {
     document.getElementById("next-crime").addEventListener("click", () => {
       let i = Math.floor(Math.random()*data.length);
       crimeLocation = {lat: Number(data[i].location.latitude), lng: Number(data[i].location.longitude)};
-      let newMarker = new google.maps.Marker({
+      const newMarker = new google.maps.Marker({
         map: map,
         position: crimeLocation, 
         animation: google.maps.Animation.DROP,
